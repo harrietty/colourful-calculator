@@ -1,0 +1,401 @@
+
+h1 {
+	font-family: "Arimo", "helvetica", sans-serif;
+	font-size: 48px;
+	text-align: center;
+	letter-spacing: 3px;
+}
+
+h2 {
+	font-family: "Arimo", "helvetica", sans-serif;
+	font-size: 24px;
+	text-align: center;
+	letter-spacing: 0px;
+}
+
+#calc {
+	width:40%;
+	margin: 0 auto;
+	border: 2px solid;
+	border-radius: 10px;
+	background-color: #fff;
+}
+
+.row {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.cell {
+	height: 70px;
+	width: 23%;
+	flex-grow: 1;
+	margin: 5px;
+	font-family: "Poiret One", 'helvetica', sans-serif;
+	font-size: 40px;
+	text-align: center;
+	line-height: 70px;
+}
+
+.cell:hover, #equals:hover {
+	cursor: pointer;
+	opacity: 0.8;
+}
+
+.operator {
+	font-size: 60px;
+	font-family: "helvetica";
+}
+
+#equals {
+	width: 100%;
+	margin: 5px;
+	height: 70px;
+	font-family: "Poiret One", 'helvetica', sans-serif;
+	font-size: 200px;
+	text-align: center;
+	line-height: 80px;
+	border-radius: 0px 0px 10px 10px;
+}
+
+#answer {
+	margin: 5px;
+	height:70px;
+	font-family: "Poiret One", 'helvetica', sans-serif;
+	font-size: 33px;
+	padding:10px;
+	overflow: auto;
+	border-radius: 10px 10px 0px 0px;
+}
+
+#answer, #equals, .cell {
+	box-shadow: 1px 1px 1px 1px;
+}
+
+#select {
+	text-align: center;
+	margin: 0 auto;
+	margin-bottom: 30px;
+}
+
+
+
+
+
+/* ==================== STYLE THE DIFFERENT COLOUR SCHEMES ======================== */ 
+/* ================================================================================ */
+
+
+/* ========================================= OCEAN ======================================== */
+
+body.ocean {
+	background-color: rgb(32, 0, 61);	
+	background-image: url("puffer.svg");
+	background-position: left 5% top 30%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 25%;
+}
+
+h1.ocean, h2.ocean {
+	color: #fff;
+}
+
+
+#equals.ocean {
+	background-color: rgb(120, 236, 211);
+	color: #000;
+}
+
+#answer.ocean {
+	background-color: rgb(16, 105, 107);
+	color: #fff;
+}
+
+.cell.ocean {
+	background-color: rgb(92, 209, 232);
+}
+
+.cell.operator.ocean {
+	background-color: rgb(212, 255, 219);
+}
+
+#clear.ocean, #point.ocean {
+	background-color: rgb(122, 162, 121);
+}
+
+
+
+
+
+/* ======= MOUNTAIN ======== */
+
+body.mountain {
+	background-color: rgb(141, 157, 132);	
+	background-image: url("mountains.svg");
+	background-position: bottom;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100%;
+}
+
+h1.mountain, h2.mountain {
+	color: rgb(26, 30, 33);
+}
+
+#equals.mountain {
+	background-color: rgb(29, 45, 54);
+	color: #fff;
+}
+
+#answer.mountain {
+	background-color: rgb(30, 32, 36);
+	color: #fff;
+}
+
+.cell.mountain {
+	background-color: rgb(215, 231, 255);
+}
+
+.cell.operator.mountain {
+	background-color: rgb(71, 112, 95);
+	color: #fff;
+}
+
+#clear.mountain, #point.mountain {
+	background-color: rgb(53, 81, 97);
+	color: #fff;
+}
+
+
+
+/* ================================= WOODLAND / DEFAULT======================================== */
+
+
+body.woodland {
+	background-color: rgb(166, 219, 184);
+	background-image: url("trees.svg");
+	background-position: bottom;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100%;
+}
+
+h1, h2, h1.woodland, h2.woodland {
+	color: #000;
+}
+
+
+#equals, #equals.woodland {
+	background-color: rgb(97, 77, 63);
+	color: #fff;
+}
+
+#answer, #answer.woodland {
+	background-color: rgb(146, 118, 175);
+}
+
+.cell, .cell.woodland {
+	background-color: rgb(43, 107, 73);
+}
+
+.cell.operator, .cell.operator.woodland {
+	background-color: rgb(122, 162, 121);
+}
+
+#clear, #point, #clear.woodland, #point.woodland {
+	background-color: rgb(194, 158, 102);
+}
+
+
+
+
+
+/* ======= DESERT ======== */
+
+body.desert{
+	background-color: rgb(255, 226, 178);
+	background-image: url("cactus.svg");
+	background-position: right 5% bottom;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 25%;
+}
+
+h1.desert, h2.desert {
+	color: #000;
+}
+
+#equals.desert {
+	background-color: rgb(124, 110, 87);
+	color: #000;
+}
+
+#answer.desert {
+	background-color: rgb(64, 51, 45);
+	color: #fff;
+}
+
+.cell.desert {
+	background-color: rgb(214, 183, 85);
+	color: #000;
+}
+
+.cell.operator.desert {
+	background-color: rgb(214, 146, 66);
+	color: #fff;
+}
+
+#clear.desert, #point.desert {
+	background-color: rgb(214, 126, 22);
+	color: #fff;
+}
+
+
+
+
+/* ======= MEADOW ======== */
+
+body.meadow {
+	background-color: rgb(227, 183, 65);
+	background-image: url("dandelion.svg");
+	background-position: left bottom;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 35%;
+}
+
+h1.meadow , h2.meadow {
+	color: #fff;
+}
+
+#equals.meadow {
+	background-color: rgb(133, 52, 60);
+	color: #000;
+}
+
+#answer.meadow {
+	background-color: rgb(162, 224, 176);
+	color: #000;
+}
+
+.cell.meadow {
+	background-color: rgb(77, 148, 93);
+	color: #fff;
+}
+
+.cell.operator.meadow {
+	background-color: rgb(224, 162, 168);
+	color: #000;
+}
+
+#clear.meadow, #point.meadow {
+	background-color: rgb(227, 226, 24);
+	color: #000;
+}
+
+
+
+
+
+/* ======= UNICORN ======== */
+
+body.unicorn{
+	background-color: rgb(12, 223, 175);
+	background-image: url("horn.svg");
+	background-position: right bottom;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 30%;
+}
+
+h1.unicorn, h2.unicorn{
+	color: #000;
+}
+
+#equals.unicorn {
+	background-color: rgb(235, 35, 168);
+}
+
+#answer.unicorn {
+	background-color: rgb(128, 231, 76);
+	color: #000;
+}
+
+.cell.unicorn {
+	background-color: rgb(255, 178, 199);
+	color: #000;
+}
+
+.cell.operator.unicorn {
+	background-color: rgb(153, 43, 247);
+	color: #fff;
+}
+
+#clear.unicorn, #point.unicorn {
+	background-color: rgb(244, 255, 38);	
+	color: #000;
+}
+
+
+
+
+
+/* ===================================== MEDIA QUERIES ======================================== */
+/* ============================================================================================ */ 
+
+ 
+@media screen and (max-width: 860px), screen and (max-device-width: 860px) {
+
+#calc {
+	width: 50%;
+}
+
+.cell {
+	height: 50px;
+	font-size: 30px;
+	line-height: 50px;
+}
+
+}
+
+@media screen and (max-width: 680px), screen and (max-device-width: 680px) {
+
+#answer {
+	height: 30px;
+}
+
+} 
+
+@media screen and (max-width: 475px), screen and (max-device-width: 475px) {
+
+#calc {
+	width: 80%;
+}
+
+body.meadow, body.ocean, body.woodland, body.unicorn, body.desert, body.mountain {
+	background-image: none;
+}
+
+#equals {
+	height: 40px;
+	font-size: 100px;
+	line-height: 40px;
+}
+	
+}
+
+
+@media screen and (max-width: 300px), screen and (max-device-width: 300px) {
+
+#calc {
+	width: 95%;
+}
+}
+
+
+
+
+
+
